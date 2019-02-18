@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Point can tell its neighbors 1`] = `
+Array [
+  Point {
+    "col": 4,
+    "neighbors": [Function],
+    "row": 2,
+  },
+  Point {
+    "col": 4,
+    "neighbors": [Function],
+    "row": 4,
+  },
+  Point {
+    "col": 3,
+    "neighbors": [Function],
+    "row": 3,
+  },
+  Point {
+    "col": 5,
+    "neighbors": [Function],
+    "row": 3,
+  },
+]
+`;
