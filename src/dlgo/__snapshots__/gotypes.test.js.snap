@@ -6,21 +6,25 @@ Array [
     "col": 4,
     "neighbors": [Function],
     "row": 2,
+    "toString": [Function],
   },
   Point {
     "col": 4,
     "neighbors": [Function],
     "row": 4,
+    "toString": [Function],
   },
   Point {
     "col": 3,
     "neighbors": [Function],
     "row": 3,
+    "toString": [Function],
   },
   Point {
     "col": 5,
     "neighbors": [Function],
     "row": 3,
+    "toString": [Function],
   },
 ]
 `;

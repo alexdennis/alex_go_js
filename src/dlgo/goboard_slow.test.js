@@ -1,5 +1,5 @@
-import { GoString } from "./goboard_slow";
-import { PLAYER_BLACK, Point } from "./gotypes";
+import { GoString, Board, new_game } from "./goboard_slow";
+import { PLAYER_BLACK, PLAYER_WHITE, Point } from "./gotypes";
 
 describe("GoString", () => {
   test("remove liberties", () => {
@@ -38,5 +38,23 @@ describe("GoString", () => {
 
     const merged_string = go_string_1.merged_with(go_string_2);
     expect(merged_string.stones).toHaveLength(2);
+  });
+});
+
+describe("Board", () => {
+  test("place stone", () => {
+    const board = new Board(9, 9);
+    expect(board.num_cols).toBe(9);
+    expect(board.num_rows).toBe(9);
+
+    board.place_stone(PLAYER_BLACK, new Point(4, 4));
+    board.place_stone(PLAYER_WHITE, new Point(4, 6));
+  });
+});
+
+describe("GameState", () => {
+  test("new game", () => {
+    const game = new_game(9);
+    console.log(game.legal_moves());
   });
 });

@@ -17,4 +17,8 @@ export class Point {
     new Point(this.row, this.col - 1),
     new Point(this.row, this.col + 1)
   ];
+
+  toString = () => {
+    return `Point(${this.row}, ${this.col})`;
+  };
 }
